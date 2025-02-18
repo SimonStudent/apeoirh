@@ -1,0 +1,20 @@
+namespace _4_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Vad är bredden?");
+            int bredd = int.Parse(Console.ReadLine());
+            Console.WriteLine("Vad är längden?");
+            int längd = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(CalculateArea(bredd, längd));
+
+        }
+        static int CalculateArea(int bredd, int längd)
+        {
+            return bredd * längd;
+        }
+    }
+}
