@@ -1,0 +1,12 @@
+namespace _1_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Skriv in ditt namn");
+            string namn = Console.ReadLine();
+            Console.WriteLine("Hej, " + namn + "!");
+        }
+    }
+}
