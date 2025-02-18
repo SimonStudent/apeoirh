@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _6_
+{
+    public class Person
+    {
+        public string Namn { get; set; }
+        public int Ålder { get; set; }
+        public void presentera()
+        {
+            Console.WriteLine($"Jag heter {Namn} och är {Ålder} år gammal.");
+        }
+    }
+}
