@@ -1,0 +1,22 @@
+namespace _5_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> namnLista = new List<string>();
+            while (true)
+            {
+                Console.WriteLine("Skriv \"stopp\" för att sluta lägga till i listan, annars tryck på valfri knapp");
+                string villLäggaTill = Console.ReadLine();
+                if (villLäggaTill.ToLower() == "stopp") break;
+                Console.Clear();
+
+                Console.WriteLine("Skriv in det namn du vill lägga till");
+                namnLista.Add(Console.ReadLine());
+            }
+            namnLista.Sort();
+            foreach(string namn in namnLista) Console.WriteLine(namn); 
+        }
+    }
+}
