@@ -1,0 +1,14 @@
+namespace _2_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Mata in ett tal");
+            int tal = int.Parse(Console.ReadLine());
+
+            if (tal > 10) Console.WriteLine("Talet är stort");
+            else Console.WriteLine("Talet är litet");
+        }
+    }
+}
