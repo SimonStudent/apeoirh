@@ -1,0 +1,18 @@
+namespace _6_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Skriv in ett namn");
+            string namn = Console.ReadLine();
+
+            Console.WriteLine("Skriv in en ålder");
+            int ålder = int.Parse(Console.ReadLine());
+
+            Person person = new Person { Namn = namn, Ålder = ålder };
+            person.presentera();
+
+        }
+    }
+}
